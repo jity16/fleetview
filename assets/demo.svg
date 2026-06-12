@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 262" font-family="Menlo, 'SF Mono', 'DejaVu Sans Mono', Consolas, monospace" font-size="13">
+  <defs>
+    <filter id="card" x="-4%" y="-6%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#000" flood-opacity="0.40"/>
+    </filter>
+    <filter id="pop" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="6" y="6" width="868" height="250" rx="14" fill="#181825" stroke="#313244" stroke-width="1.5" filter="url(#card)"/>
+
+  <!-- live indicator -->
+  <circle cx="812" cy="27" r="4.5" fill="#a6e3a1">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="824" y="31" font-size="11.5" fill="#6c7086">live</text>
+
+  <!-- ============ BEAT 1 — every session on one board ============ -->
+  <g>
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+             keyTimes="0;0.333;0.36;0.667;0.694;0.96;1" values="1;1;0;0;0;0;1"/>
+    <text xml:space="preserve" x="24" y="46"><tspan fill="#cdd6f4" font-weight="700">FleetView</tspan><tspan fill="#6c7086">  5 sessions    </tspan><tspan fill="#89dceb">🟢2 working   </tspan><tspan fill="#6c7086">⚪3 idle</tspan></text>
+    <text xml:space="preserve" x="24" y="68"><tspan fill="#a6e3a1">📊 now opus [██░░░░░░░░] ~18%</tspan><tspan fill="#6c7086">    ·    </tspan><tspan fill="#cba6f7">💰 today 18M tok</tspan></text>
+    <text xml:space="preserve" x="24" y="90" fill="#313244">──────────────────────────────────────────────────────</text>
+    <text xml:space="preserve" x="24" y="116"><tspan fill="#cdd6f4" font-weight="700">▸ api-gateway</tspan><tspan fill="#6c7086">   ~/src/api-gateway</tspan></text>
+    <text xml:space="preserve" x="24" y="138"><tspan fill="#6c7086">  </tspan><tspan fill="#89dceb">🟢 working    api:2.1</tspan><tspan fill="#6c7086">   up 4h03m  </tspan><tspan fill="#cdd6f4" font-weight="700">Add rate-limit</tspan></text>
+    <text xml:space="preserve" x="24" y="160"><tspan fill="#6c7086">  </tspan><tspan fill="#89dceb">🟢 working    api:2.3</tspan><tspan fill="#6c7086">   up 3h16m  ./packages/core</tspan></text>
+    <text xml:space="preserve" x="24" y="188"><tspan fill="#cdd6f4" font-weight="700">▸ web-frontend</tspan><tspan fill="#6c7086">  ~/src/web-frontend</tspan></text>
+    <text xml:space="preserve" x="24" y="210"><tspan fill="#6c7086">  ⚪ 3 idle   web:1.1, web:1.2, ml:1.1</tspan></text>
+    <!-- effect bubble -->
+    <path d="M474,131 L463,139 L474,147 Z" fill="#89b4fa"/>
+    <rect x="474" y="121" width="232" height="36" rx="9" fill="#89b4fa"/>
+    <text x="487" y="144" font-size="12.5" font-weight="700" fill="#11111b">every session in one board 👀</text>
+  </g>
+
+  <!-- ============ BEAT 2 — it needs you → pinned + macOS notification ============ -->
+  <g>
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+             keyTimes="0;0.333;0.36;0.667;0.694;0.96;1" values="0;0;1;1;0;0;0"/>
+    <text xml:space="preserve" x="24" y="46"><tspan fill="#cdd6f4" font-weight="700">FleetView</tspan><tspan fill="#6c7086">  5 sessions    </tspan><tspan fill="#f9e2af">🟡1 needs you   </tspan><tspan fill="#89dceb">🟢1 working   </tspan><tspan fill="#6c7086">⚪3 idle</tspan></text>
+    <text xml:space="preserve" x="24" y="68"><tspan fill="#a6e3a1">📊 now opus [██░░░░░░░░] ~19%</tspan><tspan fill="#6c7086">    ·    </tspan><tspan fill="#cba6f7">💰 today 18M tok</tspan></text>
+    <text xml:space="preserve" x="24" y="90" fill="#313244">──────────────────────────────────────────────────────</text>
+    <text xml:space="preserve" x="24" y="116"><tspan fill="#cdd6f4" font-weight="700">▸ api-gateway</tspan><tspan fill="#6c7086">   ~/src/api-gateway</tspan></text>
+    <text xml:space="preserve" x="24" y="138"><tspan fill="#6c7086">  </tspan><tspan fill="#f9e2af" font-weight="700">a 🟡 NEEDS YOU  </tspan><tspan fill="#89dceb">api:2.1</tspan><tspan fill="#6c7086">   up 4h05m  </tspan><tspan fill="#cdd6f4" font-weight="700">Add rate-limit</tspan></text>
+    <text xml:space="preserve" x="24" y="160"><tspan fill="#f9e2af">       💬 …per-IP or per-token?</tspan></text>
+    <text xml:space="preserve" x="24" y="182"><tspan fill="#6c7086">  </tspan><tspan fill="#89dceb">🟢 working    api:2.3</tspan><tspan fill="#6c7086">   up 3h18m  ./packages/core</tspan></text>
+    <text xml:space="preserve" x="24" y="210"><tspan fill="#cdd6f4" font-weight="700">▸ web-frontend</tspan><tspan fill="#6c7086">  ~/src/web-frontend</tspan></text>
+    <text xml:space="preserve" x="24" y="232"><tspan fill="#6c7086">  ⚪ 3 idle   web:1.1, web:1.2, ml:1.1</tspan></text>
+
+    <!-- effect bubble, pointing at the row that flipped -->
+    <path d="M474,131 L463,139 L474,147 Z" fill="#89b4fa"/>
+    <rect x="474" y="121" width="296" height="36" rx="9" fill="#89b4fa"/>
+    <text x="487" y="144" font-size="12.5" font-weight="700" fill="#11111b">it asked you → jumps to the top</text>
+
+    <!-- the actual macOS notification -->
+    <g filter="url(#pop)">
+      <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite"
+                        keyTimes="0;0.40;0.46;1" values="26,0;26,0;0,0;0,0"/>
+      <rect x="474" y="172" width="300" height="54" rx="12" fill="#1e1e2e" stroke="#45475a" stroke-width="1"/>
+      <rect x="486" y="184" width="30" height="30" rx="8" fill="#f9e2af"/>
+      <text x="501" y="205" font-size="16" text-anchor="middle">💬</text>
+      <text x="526" y="194" font-size="12" fill="#cdd6f4" font-weight="700">api-gateway</text>
+      <text x="526" y="211" font-size="11" fill="#9399b2">needs you · per-IP or per-token?</text>
+      <text x="700" y="186" font-size="9.5" fill="#6c7086">macOS 🔔</text>
+    </g>
+  </g>
+
+  <!-- ============ BEAT 3 — press one key → jump to the pane ============ -->
+  <g>
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+             keyTimes="0;0.333;0.36;0.667;0.694;0.96;1" values="0;0;0;0;1;1;0"/>
+    <text xml:space="preserve" x="24" y="46"><tspan fill="#cdd6f4" font-weight="700">FleetView</tspan><tspan fill="#6c7086">  5 sessions    </tspan><tspan fill="#f9e2af">🟡1 needs you   </tspan><tspan fill="#89dceb">🟢1 working   </tspan><tspan fill="#6c7086">⚪3 idle</tspan></text>
+    <text xml:space="preserve" x="24" y="68"><tspan fill="#a6e3a1">📊 now opus [██░░░░░░░░] ~19%</tspan><tspan fill="#6c7086">    ·    </tspan><tspan fill="#cba6f7">💰 today 18M tok</tspan></text>
+    <text xml:space="preserve" x="24" y="90" fill="#313244">──────────────────────────────────────────────────────</text>
+    <text xml:space="preserve" x="24" y="116"><tspan fill="#cdd6f4" font-weight="700">▸ api-gateway</tspan><tspan fill="#6c7086">   ~/src/api-gateway</tspan></text>
+    <text xml:space="preserve" x="24" y="138"><tspan fill="#6c7086">  </tspan><tspan fill="#f9e2af" font-weight="700">a 🟡 NEEDS YOU  </tspan><tspan fill="#89dceb">api:2.1</tspan><tspan fill="#6c7086">   up 4h05m  </tspan><tspan fill="#cdd6f4" font-weight="700">Add rate-limit</tspan></text>
+    <text xml:space="preserve" x="24" y="160"><tspan fill="#f9e2af">       💬 …per-IP or per-token?</tspan></text>
+    <text xml:space="preserve" x="24" y="182"><tspan fill="#6c7086">  </tspan><tspan fill="#89dceb">🟢 working    api:2.3</tspan><tspan fill="#6c7086">   up 3h18m  ./packages/core</tspan></text>
+    <text xml:space="preserve" x="24" y="210"><tspan fill="#cdd6f4" font-weight="700">▸ web-frontend</tspan><tspan fill="#6c7086">  ~/src/web-frontend</tspan></text>
+    <text xml:space="preserve" x="24" y="232"><tspan fill="#6c7086">  ⚪ 3 idle   web:1.1, web:1.2, ml:1.1</tspan></text>
+
+    <!-- hotkey highlight on the waiting row -->
+    <rect x="35.5" y="126" width="15" height="17" rx="4" fill="#f9e2af" fill-opacity="0.16" stroke="#f9e2af" stroke-width="1.3">
+      <animate attributeName="stroke-opacity" values="1;0.35;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <!-- effect bubble -->
+    <path d="M474,131 L463,139 L474,147 Z" fill="#89b4fa"/>
+    <rect x="474" y="121" width="312" height="36" rx="9" fill="#89b4fa"/>
+    <text x="487" y="144" font-size="12.5" font-weight="700" fill="#11111b">press its key → you're in that pane ⚡</text>
+  </g>
+</svg>

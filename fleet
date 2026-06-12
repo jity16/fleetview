@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# FleetView launcher — live board of all Claude Code sessions + notifications.
+# Usage: ./fleet [--once|--headless|--no-notify|--test-notify|--interval N]
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec python3 "$DIR/fleet_board.py" "$@"
